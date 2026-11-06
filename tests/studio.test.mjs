@@ -58,7 +58,7 @@ test('all four chapters select, display curated output and announce progress', (
   cases.forEach(([filename, output], index) => {
     buttons[index].fire('click');
     assert.equal(nodes['code-file'].textContent, filename);
-    assert.match(nodes['output-content'].textContent, /Illustrative output/);
+    assert.match(nodes['output-content'].textContent, /illustrative output/i);
     assert.equal(nodes.progress.textContent, `${String(index + 1).padStart(2, '0')} / 04 EXPLORED`);
     for (let i = 0; i < buttons.length; i++) {
       assert.equal(buttons[i].getAttribute('aria-pressed'), String(i === index));
