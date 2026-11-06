@@ -26,6 +26,8 @@ jobs:
         run: sha256sum --check --strict SOURCE-MANIFEST.sha256
       - name: Check JavaScript syntax
         run: node --check app.js
+      - name: Verify offline chapter interactions
+        run: node --test tests/studio.test.mjs
       - name: Verify offline educational boundary
         run: |
           python3 - <<'PY'
