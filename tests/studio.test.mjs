@@ -51,7 +51,7 @@ test('all four chapters select, display curated output and announce progress', (
   const { nodes, buttons } = makeStudio();
   const cases = [
     ['01_origins.py', 'Hello, world!'],
-    ['02_collections.py', 'Cobalt\\nAmber\\nIvory'],
+    ['02_collections.py', 'Cobalt\nAmber\nIvory'],
     ['03_decisions.py', 'Ready to begin'],
     ['04_functions.py', 'Welcome to Python'],
   ];
@@ -85,10 +85,10 @@ test('offline missing-clipboard fallback does not break the studio', async () =>
   await nodes['copy-button'].fire('click');
   assert.match(nodes.feedback.textContent, /copy is unavailable here/i);
   nodes['run-button'].fire('click');
-  assert.equal(nodes['output-content'].textContent, 'Cobalt\\nAmber\\nIvory');
+  assert.equal(nodes['output-content'].textContent, 'Cobalt\nAmber\nIvory');
 });
 
 test('source does not contain a runtime code evaluator or network call', () => {
-  assert.doesNotMatch(source, /\\b(?:eval|fetch|XMLHttpRequest|WebSocket|localStorage)\\s*\\(/);
-  assert.doesNotMatch(source, /new\\s+Function\\s*\\(/);
+  assert.doesNotMatch(source, /\b(?:eval|fetch|XMLHttpRequest|WebSocket|localStorage)\s*\(/);
+  assert.doesNotMatch(source, /new\s+Function\s*\(/);
 });
