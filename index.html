@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="An independent, offline-first visual introduction to programming with Python.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'">
+  <title>Python Foundations — Begin Here</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#studio">Skip to the learning studio</a>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Python Foundations home">
+      <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span>PYTHON<span class="wordmark-light"> / FOUNDATIONS</span></span>
+    </a>
+    <nav aria-label="Page sections">
+      <a href="#path">The path</a>
+      <a href="#studio">The studio</a>
+    </nav>
+    <span class="header-kicker">LEARN OFFLINE</span>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> 001 — THE BEGINNING</p>
+        <h1 id="hero-title">A little code.<br><em>A universe</em><br>of possibility.</h1>
+        <p class="lead">Every remarkable thing begins somewhere. Explore the language of making ideas real — one clear, beautiful line at a time.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#studio">Enter the studio <span aria-hidden="true">↗</span></a>
+          <a class="quiet-link" href="#path">Discover the path <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">No sign-in. No telemetry. No network requests.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="orb-core"></div>
+        <span class="orbit-label orbit-label-top">HELLO, WORLD</span>
+        <span class="orbit-label orbit-label-bottom">THE ART OF BEGINNING</span>
+        <div class="art-index">01 <span>/</span> 04</div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="path" aria-labelledby="path-title">
+      <div class="section-label">THE PATH <span>— 04 COMPOSITIONS</span></div>
+      <div class="manifesto-main">
+        <h2 id="path-title">Learn the rules.<br><em>Find your rhythm.</em></h2>
+        <p>Programming is more than syntax. It is a way of seeing a problem, finding structure, and shaping an answer. These four short studies make the fundamentals approachable.</p>
+      </div>
+      <div class="path-list" aria-label="Four chapters">
+        <div><span>01</span><strong>Origins</strong><span>Make your first statement.</span></div>
+        <div><span>02</span><strong>Collections</strong><span>Give information a shape.</span></div>
+        <div><span>03</span><strong>Decisions</strong><span>Write logic with intention.</span></div>
+        <div><span>04</span><strong>Functions</strong><span>Turn ideas into reusable craft.</span></div>
+      </div>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="section-label">THE STUDIO <span>— INTERACTIVE LEARNING</span></div>
+      <div class="studio-heading">
+        <div>
+          <h2 id="studio-title">Choose a chapter.<br><em>See it come alive.</em></h2>
+          <p>The output shown is a curated illustration, not a Python interpreter. Run the code locally when you are ready to experiment.</p>
+        </div>
+        <p class="chapter-progress" id="progress" aria-live="polite">01 / 04 EXPLORED</p>
+      </div>
+
+      <div class="studio-grid">
+        <div class="chapter-list" aria-label="Learning chapters">
+          <button class="chapter active" type="button" data-chapter="origins" aria-pressed="true">
+            <span class="chapter-n">01</span>
+            <span><strong>Origins</strong><small>The first expression</small></span>
+            <span class="chapter-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="chapter" type="button" data-chapter="collections" aria-pressed="false">
+            <span class="chapter-n">02</span>
+            <span><strong>Collections</strong><small>Order from many pieces</small></span>
+            <span class="chapter-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="chapter" type="button" data-chapter="decisions" aria-pressed="false">
+            <span class="chapter-n">03</span>
+            <span><strong>Decisions</strong><small>A deliberate next step</small></span>
+            <span class="chapter-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="chapter" type="button" data-chapter="functions" aria-pressed="false">
+            <span class="chapter-n">04</span>
+            <span><strong>Functions</strong><small>Craft you can reuse</small></span>
+            <span class="chapter-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <div class="code-panel">
+          <div class="code-toolbar"><span class="window-dots" aria-hidden="true">● ● ●</span><span id="code-file">01_origins.py</span><span>PYTHON 3</span></div>
+          <p class="code-caption" id="chapter-caption">A single line changes an empty screen into something meaningful.</p>
+          <pre class="code-pre"><code id="code-content">print("Hello, world!")</code></pre>
+          <div class="code-actions">
+            <button id="run-button" class="run-button" type="button">Reveal illustrative output <span aria-hidden="true">↗</span></button>
+            <button id="copy-button" class="copy-button" type="button">Copy code</button>
+          </div>
+          <div class="output-panel" aria-label="Illustrative output">
+            <div class="output-header"><span>ILLUSTRATIVE OUTPUT</span><span class="output-indicator" aria-hidden="true"></span></div>
+            <pre id="output-content" aria-live="polite">Select “Reveal illustrative output” to see the example result.</pre>
+          </div>
+          <p class="interaction-feedback" id="feedback" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <p class="eyebrow">BEGIN WITH CURIOSITY</p>
+      <h2 id="closing-title">An elegant start is<br><em>still a start.</em></h2>
+      <p>Keep learning. Keep building. Make something only you could imagine — without needing to share anything personal to do it.</p>
+      <a class="quiet-link" href="#top">Return to beginning <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer><span>PYTHON / FOUNDATIONS</span><span>Four interactive studies · No data collected</span><span>Made to learn, not to collect data.</span></footer>
+</body>
+</html>
