@@ -1,4 +1,4 @@
-name: Verify offline learning edition
+name: Verify public Python learning edition
 
 on:
   pull_request:
